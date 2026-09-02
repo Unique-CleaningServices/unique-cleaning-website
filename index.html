@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unique Cleaning & Maintenance Facilities Limited | London</title>
+
+    <meta name="description" content="Unique Cleaning & Maintenance Facilities Limited provides cleaning, carpet cleaning, plumbing, flooring, renovations, central heating and goods transport services across London and surrounding areas.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f7f9fc;
+        }
+
+        header {
+            background: #0b3d5c;
+            color: white;
+            padding: 20px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #e9f4f8;
+            padding: 90px 6%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            color: #0b3d5c;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: 0 auto 30px;
+            font-size: 19px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 7px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #0b3d5c;
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .whatsapp {
+            background: #168a45;
+        }
+
+        section {
+            padding: 70px 6%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #0b3d5c;
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .service h3 {
+            color: #0b3d5c;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .service p {
+            color: #555;
+        }
+
+        .buildings {
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .building-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .building {
+            background: #e9f4f8;
+            padding: 18px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .why-us {
+            text-align: center;
+        }
+
+        .why-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .why-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+        }
+
+        .contact {
+            background: #0b3d5c;
+            color: white;
+            text-align: center;
+            max-width: none;
+        }
+
+        .contact h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .contact a {
+            color: white;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #082d43;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 800px) {
+            .services,
+            .why-list {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .services,
+            .why-list {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 60px 5%;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        UNIQUE CLEANING & MAINTENANCE
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <h1>Unique Cleaning & Maintenance Facilities Limited</h1>
+
+    <h2>Cleaning • Maintenance • Renovation • Property Services</h2>
+
+    <p>
+        Professional and reliable services for homes, offices,
+        commercial properties, professional buildings and other
+        premises across London and surrounding areas.
+    </p>
+
+    <a class="button" href="#contact">Get a Free Quote</a>
+
+    <a class="button whatsapp"
+       href="https://wa.me/447438254679"
+       target="_blank">
+        WhatsApp Us
+    </a>
+
+</section>
+
+
+<section id="services">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>🧼 Carpet Cleaning</h3>
+            <p>
+                Professional carpet cleaning services to help keep
+                your carpets fresh, clean and well maintained.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🧹 Cleaning Services</h3>
+            <p>
+                Reliable cleaning solutions for homes, offices,
+                commercial premises and other buildings.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🚰 Plumbing</h3>
+            <p>
+                Plumbing services for residential, commercial and
+                professional properties.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🔥 Central Heating</h3>
+            <p>
+                Central heating services to help keep properties
+                warm, comfortable and properly maintained.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🪵 Flooring</h3>
+            <p>
+                Flooring installation, replacement and improvement
+                solutions for different types of properties.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🏗️ Renovations</h3>
+            <p>
+                Property renovation and improvement services for
+                homes, offices and commercial buildings.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🚚 Goods Transport</h3>
+            <p>
+                Transportation of goods, furniture, equipment and
+                other items from one building or property to another.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🔧 Maintenance</h3>
+            <p>
+                General property maintenance solutions to help keep
+                buildings functional, clean and well maintained.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>🏢 Property Services</h3>
+            <p>
+                Flexible services for residential, commercial and
+                professional buildings.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="buildings">
+
+    <h2 class="section-title">We Serve All Types of Buildings</h2>
+
+    <div class="building-list">
+
+        <div class="building">🏠 Homes</div>
+
+        <div class="building">🏢 Offices</div>
+
+        <div class="building">🏬 Commercial Buildings</div>
+
+        <div class="building">🏛️ Professional Buildings</div>
+
+        <div class="building">🏘️ Rental Properties</div>
+
+        <div class="building">🏗️ Other Premises</div>
+
+    </div>
+
+</section>
+
+
+<section class="why-us" id="about">
+
+    <h2 class="section-title">Why Choose Unique?</h2>
+
+    <div class="why-list">
+
+        <div class="why-item">
+            <h3>✓ Professional</h3>
+            <p>
+                We aim to provide reliable and professional services
+                for every customer.
+            </p>
+        </div>
+
+        <div class="why-item">
+            <h3>✓ Multiple Services</h3>
+            <p>
+                Cleaning, maintenance, renovation, plumbing,
+                flooring, heating and transport in one place.
+            </p>
+        </div>
+
+        <div class="why-item">
+            <h3>✓ London Wide</h3>
+            <p>
+                We serve customers across London and surrounding areas.
+            </p>
+        </div>
+
+        <div class="why-item">
+            <h3>✓ Flexible</h3>
+            <p>
+                Solutions for homes, offices, commercial and
+                professional buildings.
+            </p>
+        </div>
+
+        <div class="why-item">
+            <h3>✓ 24/7</h3>
+            <p>
+                Our services are available 24 hours a day,
+                7 days a week.
+            </p>
+        </div>
+
+        <div class="why-item">
+            <h3>✓ Free Quote</h3>
+            <p>
+                Contact us to discuss your requirements and request
+                a quotation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>Need a Service or a Quote?</h2>
+
+    <p>
+        Contact Unique Cleaning & Maintenance Facilities Limited today.
+    </p>
+
+    <p>
+        📞 Phone:
+        <a href="tel:07438254679">07438 254679</a>
+    </p>
+
+    <p>
+        💬 WhatsApp:
+        <a href="https://wa.me/447438254679" target="_blank">
+            Message us on WhatsApp
+        </a>
+    </p>
+
+    <p>
+        📍 Serving London and surrounding areas
+    </p>
+
+    <p>
+        🕐 Available 24/7
+    </p>
+
+    <br>
+
+    <a class="button whatsapp"
+       href="https://wa.me/447438254679"
+       target="_blank">
+        Chat With Us on WhatsApp
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Unique Cleaning & Maintenance Facilities Limited.
+        All Rights Reserved.
+    </p>
+
+    <p>
+        London & Surrounding Areas
+    </p>
+
+</footer>
+
+</body>
+</html>

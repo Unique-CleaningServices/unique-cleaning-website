@@ -9,14 +9,33 @@
 
   <meta
     name="description"
-    content="Unique Cleaning and Maintenance Facilities Limited provides professional cleaning, carpet cleaning, plumbing, central heating, flooring, renovations, bathroom fitting, tiling, property maintenance and goods transport across London and surrounding areas."
+    content="Unique Cleaning and Maintenance Facilities Limited provides cleaning, carpet cleaning, plumbing, central heating, flooring, renovations, bathroom fitting, professional tiling, goods transport, property maintenance and facilities services across London and surrounding areas."
   >
 
+  <meta
+    name="keywords"
+    content="cleaning services London, carpet cleaning London, plumbing London, central heating London, bathroom fitting London, tiling London, flooring London, renovations London, property maintenance London, facilities services London"
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://uniquecleaningandmaintenance.co.uk/"
+  >
+
+  <meta property="og:title" content="Unique Cleaning & Maintenance Facilities Limited">
+  <meta property="og:description" content="Cleaning, maintenance, renovation and property services across London and surrounding areas.">
+  <meta property="og:image" content="https://uniquecleaningandmaintenance.co.uk/logo.webp">
+  <meta property="og:url" content="https://uniquecleaningandmaintenance.co.uk/">
+  <meta property="og:type" content="website">
+
   <style>
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -25,9 +44,14 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
+      color: #1f2937;
       background: #ffffff;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
     }
 
     a {
@@ -35,853 +59,2156 @@
       color: inherit;
     }
 
+    section {
+      scroll-margin-top: 110px;
+    }
+
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
     .top-bar {
-      background: #111827;
+      background: #071b33;
       color: white;
-      padding: 10px 20px;
       text-align: center;
+      padding: 10px 20px;
       font-size: 14px;
     }
 
+    .top-bar span {
+      margin: 0 8px;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
-      background: white;
+      background: rgba(255,255,255,0.98);
       border-bottom: 1px solid #e5e7eb;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.04);
     }
 
-    .nav-container {
-      max-width: 1200px;
+    .navbar {
+      max-width: 1250px;
       margin: auto;
-      padding: 18px 20px;
+      padding: 12px 20px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 30px;
     }
 
-    .logo {
+    .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 13px;
+      min-width: 280px;
     }
 
-    .logo-symbol {
-      width: 48px;
-      height: 48px;
+    .brand-logo {
+      width: 68px;
+      height: 68px;
       border-radius: 12px;
-      background: #2563eb;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      font-weight: bold;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
 
-    .logo-text strong {
+    .brand-name strong {
       display: block;
+      color: #0b3b70;
       font-size: 18px;
-      letter-spacing: 1px;
+      letter-spacing: .5px;
     }
 
-    .logo-text span {
+    .brand-name span {
+      display: block;
+      color: #64748b;
       font-size: 11px;
-      color: #6b7280;
-      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 1.3;
     }
 
     nav {
       display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      justify-content: center;
+      align-items: center;
+      gap: 24px;
     }
 
     nav a {
+      color: #334155;
       font-weight: 600;
-      color: #374151;
-      transition: 0.2s;
+      font-size: 15px;
+      transition: .2s ease;
     }
 
     nav a:hover {
-      color: #2563eb;
+      color: #1476d4;
     }
 
+    .nav-quote {
+      background: #1476d4;
+      color: white !important;
+      padding: 11px 17px;
+      border-radius: 8px;
+    }
+
+    .nav-quote:hover {
+      background: #0b5fb4;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
-      background: linear-gradient(135deg, #eff6ff, #ffffff);
+      min-height: 680px;
+
+      background:
+        linear-gradient(
+          110deg,
+          rgba(4,25,50,.96) 0%,
+          rgba(8,52,98,.92) 48%,
+          rgba(18,111,194,.82) 100%
+        );
+
+      color: white;
       padding: 90px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      width: 550px;
+      height: 550px;
+
+      border-radius: 50%;
+
+      position: absolute;
+      right: -150px;
+      top: -180px;
+
+      background: rgba(255,255,255,.06);
     }
 
     .hero-container {
-      max-width: 1200px;
+      max-width: 1250px;
       margin: auto;
+
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 50px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 65px;
+
       align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.22);
+
+      border-radius: 30px;
+      padding: 8px 16px;
+
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-weight: bold;
     }
 
     .hero h1 {
-      font-size: 52px;
-      line-height: 1.1;
+      font-size: 57px;
+      line-height: 1.07;
       margin-bottom: 22px;
-      color: #111827;
+      max-width: 780px;
     }
 
-    .hero p {
+    .hero h1 span {
+      color: #6bc3ff;
+    }
+
+    .hero-text {
+      max-width: 720px;
+      color: #dbeafe;
       font-size: 19px;
-      color: #4b5563;
       margin-bottom: 28px;
-      max-width: 650px;
     }
 
-    .hero-buttons {
+    .hero-points {
       display: flex;
-      gap: 14px;
       flex-wrap: wrap;
+      gap: 15px;
+
+      margin-bottom: 32px;
     }
 
-    .button {
-      display: inline-block;
-      padding: 14px 22px;
+    .hero-points span {
+      background: rgba(255,255,255,.09);
+      padding: 8px 13px;
       border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 14px 22px;
+
+      border-radius: 9px;
+
       font-weight: bold;
-      transition: 0.2s;
+      transition: .2s ease;
+      cursor: pointer;
     }
 
-    .button-primary {
-      background: #2563eb;
-      color: white;
+    .btn-primary {
+      background: #ffffff;
+      color: #0b4f91;
     }
 
-    .button-primary:hover {
-      background: #1d4ed8;
-    }
-
-    .button-secondary {
-      border: 2px solid #2563eb;
-      color: #2563eb;
-      background: white;
-    }
-
-    .button-secondary:hover {
+    .btn-primary:hover {
+      transform: translateY(-2px);
       background: #eff6ff;
     }
 
-    .hero-box {
-      background: white;
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1fb858;
+      transform: translateY(-2px);
+    }
+
+    .hero-logo-box {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+
+      border-radius: 25px;
+      padding: 22px;
+
+      backdrop-filter: blur(8px);
+
+      box-shadow: 0 25px 70px rgba(0,0,0,.25);
+    }
+
+    .hero-logo-box img {
+      width: 100%;
       border-radius: 18px;
-      padding: 30px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-      border: 1px solid #e5e7eb;
     }
 
-    .hero-box h3 {
-      margin-bottom: 15px;
-      font-size: 24px;
+
+    /* =========================
+       TRUST STRIP
+    ========================= */
+
+    .trust-strip {
+      background: #f8fbff;
+      border-bottom: 1px solid #e7edf5;
     }
 
-    .hero-box ul {
-      list-style: none;
+    .trust-inner {
+      max-width: 1200px;
+      margin: auto;
+
+      padding: 25px 20px;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      text-align: center;
     }
 
-    .hero-box li {
-      padding: 9px 0;
-      border-bottom: 1px solid #eee;
+    .trust-item strong {
+      display: block;
+      color: #0b4f91;
+      font-size: 18px;
+      margin-bottom: 3px;
     }
 
-    .hero-box li:last-child {
-      border-bottom: none;
+    .trust-item span {
+      color: #64748b;
+      font-size: 14px;
     }
+
+
+    /* =========================
+       GENERAL
+    ========================= */
 
     .section {
-      padding: 80px 20px;
+      padding: 90px 20px;
     }
 
     .section-light {
-      background: #f9fafb;
+      background: #f7fafe;
     }
 
-    .section-container {
-      max-width: 1200px;
+    .container {
+      max-width: 1250px;
       margin: auto;
     }
 
     .section-heading {
       text-align: center;
-      max-width: 750px;
-      margin: 0 auto 45px;
+      max-width: 800px;
+      margin: 0 auto 48px;
+    }
+
+    .eyebrow {
+      color: #1476d4;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     .section-heading h2 {
-      font-size: 38px;
-      margin-bottom: 12px;
-      color: #111827;
+      font-size: 42px;
+      line-height: 1.15;
+      color: #0f2743;
+      margin-bottom: 15px;
     }
 
     .section-heading p {
-      color: #6b7280;
+      color: #64748b;
       font-size: 17px;
     }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
 
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 26px;
     }
 
     .service-card {
       background: white;
-      padding: 28px;
-      border-radius: 14px;
-      border: 1px solid #e5e7eb;
-      transition: 0.2s;
+
+      border: 1px solid #e4ebf3;
+      border-radius: 17px;
+
+      overflow: hidden;
+
+      box-shadow: 0 8px 28px rgba(15,45,80,.06);
+      transition: .25s ease;
     }
 
     .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      transform: translateY(-6px);
+      box-shadow: 0 18px 38px rgba(15,45,80,.13);
+    }
+
+    .service-image {
+      width: 100%;
+      height: 235px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 25px;
     }
 
     .service-number {
-      display: inline-flex;
       width: 38px;
       height: 38px;
+
+      background: #e9f4ff;
+      color: #1476d4;
+
       border-radius: 50%;
-      background: #eff6ff;
-      color: #2563eb;
+
+      display: inline-flex;
       align-items: center;
       justify-content: center;
+
+      font-size: 14px;
       font-weight: bold;
-      margin-bottom: 15px;
+
+      margin-bottom: 13px;
     }
 
-    .service-card h3 {
-      font-size: 21px;
-      margin-bottom: 10px;
-      color: #111827;
+    .service-content h3 {
+      color: #0f2743;
+      font-size: 22px;
+      margin-bottom: 8px;
     }
 
-    .service-card p {
-      color: #6b7280;
+    .service-content p {
+      color: #64748b;
+      font-size: 15px;
     }
 
-    .audience-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
 
-    .audience-card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      border: 1px solid #e5e7eb;
-      text-align: center;
-      font-weight: bold;
-    }
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 50px;
+      gap: 65px;
       align-items: center;
     }
 
     .about-content h2 {
-      font-size: 38px;
+      font-size: 43px;
+      color: #0f2743;
+      line-height: 1.15;
       margin-bottom: 20px;
     }
 
     .about-content p {
-      color: #4b5563;
-      margin-bottom: 18px;
+      color: #5b6777;
       font-size: 17px;
+      margin-bottom: 17px;
     }
 
-    .about-box {
-      background: #111827;
+    .about-panel {
+      background:
+        linear-gradient(145deg,#082b50,#0f65ac);
+
       color: white;
-      padding: 35px;
-      border-radius: 18px;
+      padding: 42px;
+      border-radius: 22px;
+
+      box-shadow: 0 20px 50px rgba(6,40,76,.2);
     }
 
-    .about-box h3 {
-      font-size: 26px;
-      margin-bottom: 15px;
+    .about-panel h3 {
+      font-size: 29px;
+      margin-bottom: 22px;
     }
 
-    .about-box p {
-      color: #d1d5db;
+    .why-list {
+      list-style: none;
     }
+
+    .why-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    .why-list li:last-child {
+      border-bottom: none;
+    }
+
+
+    /* =========================
+       WHO WE SERVE
+    ========================= */
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .audience-card {
+      background: white;
+
+      border: 1px solid #e5edf5;
+      border-radius: 13px;
+
+      padding: 28px 20px;
+      text-align: center;
+
+      font-weight: bold;
+      color: #17395d;
+
+      box-shadow: 0 6px 20px rgba(0,0,0,.035);
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
 
     .cta {
-      background: #2563eb;
+      padding: 75px 20px;
+
+      background:
+        linear-gradient(115deg,#052746,#0b5b9c,#1684d8);
+
       color: white;
-      padding: 70px 20px;
+
       text-align: center;
     }
 
+    .cta-inner {
+      max-width: 850px;
+      margin: auto;
+    }
+
     .cta h2 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 15px;
     }
 
     .cta p {
-      max-width: 700px;
-      margin: 0 auto 25px;
+      color: #dbeafe;
       font-size: 18px;
+      margin-bottom: 28px;
     }
 
-    .cta .button-secondary {
-      border-color: white;
-      color: #2563eb;
-    }
 
-    .contact-grid {
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-wrapper {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 40px;
     }
 
-    .contact-card {
-      background: #f9fafb;
-      padding: 28px;
-      border-radius: 14px;
-      text-align: center;
+    .contact-info {
+      background: #082d54;
+      color: white;
+
+      padding: 38px;
+      border-radius: 18px;
     }
 
-    .contact-card h3 {
-      margin-bottom: 10px;
+    .contact-info h3 {
+      font-size: 29px;
+      margin-bottom: 12px;
     }
 
-    .contact-card p {
-      color: #4b5563;
+    .contact-info > p {
+      color: #d7e9fb;
+      margin-bottom: 28px;
     }
 
-    .contact-card a {
-      color: #2563eb;
+    .contact-detail {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    .contact-detail:last-child {
+      border-bottom: none;
+    }
+
+    .contact-detail strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #8fd0ff;
+    }
+
+    .contact-detail a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       FORM
+    ========================= */
+
+    .form-box {
+      background: white;
+
+      border: 1px solid #e4ebf3;
+      border-radius: 18px;
+
+      padding: 38px;
+
+      box-shadow: 0 15px 40px rgba(15,45,80,.08);
+    }
+
+    .form-box h3 {
+      font-size: 29px;
+      color: #0f2743;
+      margin-bottom: 8px;
+    }
+
+    .form-box > p {
+      color: #64748b;
+      margin-bottom: 25px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
       font-weight: bold;
+
+      color: #334155;
+      margin-bottom: 7px;
     }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+
+      padding: 13px 14px;
+
+      font: inherit;
+      color: #1f2937;
+
+      background: white;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #1476d4;
+      box-shadow: 0 0 0 3px rgba(20,118,212,.11);
+    }
+
+    textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      border: none;
+
+      width: 100%;
+      background: #1476d4;
+      color: white;
+
+      padding: 15px 20px;
+
+      border-radius: 9px;
+
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #0d61b5;
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: #7c8797;
+      margin-top: 12px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
-      background: #111827;
+      background: #04182c;
       color: white;
-      padding: 30px 20px;
-      text-align: center;
+      padding: 48px 20px 25px;
     }
 
-    footer p {
-      color: #9ca3af;
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 45px;
+
+      padding-bottom: 35px;
+    }
+
+    .footer-logo {
+      width: 95px;
+      border-radius: 11px;
+      margin-bottom: 15px;
+    }
+
+    .footer-about p {
+      color: #aebed0;
+      max-width: 520px;
       font-size: 14px;
     }
 
-    @media (max-width: 900px) {
-      .hero-container,
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .audience-grid,
-      .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero h1 {
-        font-size: 42px;
-      }
+    footer h4 {
+      margin-bottom: 14px;
+      color: #8fd0ff;
     }
 
-    @media (max-width: 600px) {
-      .nav-container {
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+      color: #c0ccda;
+      font-size: 14px;
+    }
+
+    footer li a:hover {
+      color: white;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: auto;
+
+      border-top: 1px solid rgba(255,255,255,.1);
+
+      padding-top: 20px;
+      text-align: center;
+
+      color: #8da0b5;
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================= */
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+
+      z-index: 999;
+
+      width: 58px;
+      height: 58px;
+
+      border-radius: 50%;
+
+      background: #25D366;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 27px;
+
+      box-shadow: 0 8px 25px rgba(0,0,0,.25);
+
+      transition: .2s ease;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 1000px) {
+
+      .navbar {
         flex-direction: column;
       }
 
       nav {
-        gap: 12px;
-        font-size: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
-      .hero {
-        padding: 60px 20px;
+      .hero-container,
+      .about-grid,
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-logo-box {
+        max-width: 550px;
+        margin: auto;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2,1fr);
       }
 
       .hero h1 {
-        font-size: 36px;
+        font-size: 49px;
       }
 
-      .section {
-        padding: 60px 20px;
+    }
+
+
+    @media (max-width: 750px) {
+
+      .top-bar span {
+        display: block;
       }
 
-      .section-heading h2,
-      .about-content h2 {
-        font-size: 30px;
+      .brand {
+        min-width: auto;
+      }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand-name strong {
+        font-size: 15px;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 65px 20px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      .trust-inner {
+        grid-template-columns: 1fr 1fr;
       }
 
       .services-grid,
       .audience-grid,
-      .contact-grid {
+      .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .hero-buttons {
+      .section {
+        padding: 65px 18px;
+      }
+
+      .section-heading h2,
+      .about-content h2,
+      .cta h2 {
+        font-size: 32px;
+      }
+
+      .service-image {
+        height: 230px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .form-box,
+      .contact-info {
+        padding: 27px;
+      }
+
+      .button-row {
         flex-direction: column;
       }
 
-      .button {
-        text-align: center;
+      .btn {
+        width: 100%;
       }
+
     }
+
   </style>
+
+
+  <!-- BUSINESS INFORMATION FOR SEARCH ENGINES -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Unique Cleaning and Maintenance Facilities Limited",
+    "url": "https://uniquecleaningandmaintenance.co.uk/",
+    "logo": "https://uniquecleaningandmaintenance.co.uk/logo.webp",
+    "email": "info@uniquecleaningandmaintenance.co.uk",
+    "telephone": "+447438254679",
+    "areaServed": [
+      "London",
+      "Greater London",
+      "Surrounding areas"
+    ],
+    "description": "Cleaning, maintenance, renovation and property-related services across London and surrounding areas."
+  }
+  </script>
+
 </head>
+
 
 <body>
 
-  <div class="top-bar">
-    Available 24/7 across London and surrounding areas
-  </div>
 
-  <header>
-    <div class="nav-container">
+<!-- TOP BAR -->
 
-      <a href="#home" class="logo">
-        <div class="logo-symbol">U</div>
+<div class="top-bar">
 
-        <div class="logo-text">
-          <strong>UNIQUE CLEANING</strong>
-          <span>& MAINTENANCE FACILITIES LIMITED</span>
-        </div>
+  <span>✓ Available 24/7</span>
+
+  <span>•</span>
+
+  <span>London & Surrounding Areas</span>
+
+  <span>•</span>
+
+  <span>Call: 07438 254679</span>
+
+</div>
+
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="navbar">
+
+    <a href="#home" class="brand">
+
+      <img
+        src="logo.webp"
+        alt="Unique Cleaning and Maintenance Facilities Limited logo"
+        class="brand-logo"
+      >
+
+      <div class="brand-name">
+
+        <strong>UNIQUE CLEANING</strong>
+
+        <span>
+          & Maintenance Facilities Limited
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <nav>
+
+      <a href="#home">Home</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#about">About</a>
+
+      <a href="#contact">Contact</a>
+
+      <a href="#contact" class="nav-quote">
+        Request a Quote
       </a>
 
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="hero-container">
+
+
+    <div>
+
+      <div class="hero-badge">
+        Property Services Across London
+      </div>
+
+
+      <h1>
+        One Company for
+        <span>Your Property Needs</span>
+      </h1>
+
+
+      <p class="hero-text">
+
+        Professional cleaning, maintenance, renovations,
+        bathroom fitting, tiling, plumbing, flooring,
+        heating and property services for homes,
+        offices and commercial premises.
+
+      </p>
+
+
+      <div class="hero-points">
+
+        <span>✓ 11 Property Services</span>
+
+        <span>✓ Residential & Commercial</span>
+
+        <span>✓ Available 24/7</span>
+
+      </div>
+
+
+      <div class="button-row">
+
+        <a href="#contact" class="btn btn-primary">
+
+          Request a Quote
+
+        </a>
+
+
+        <a
+          href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20and%20Maintenance.%20I%20would%20like%20to%20request%20a%20quote%20for%20a%20property%20service."
+          target="_blank"
+          rel="noopener"
+          class="btn btn-whatsapp"
+        >
+
+          WhatsApp Us
+
+        </a>
+
+      </div>
 
     </div>
-  </header>
 
 
-  <!-- HOME -->
-  <section class="hero" id="home">
+    <div class="hero-logo-box">
 
-    <div class="hero-container">
-
-      <div>
-        <h1>One Company for Your Property Needs</h1>
-
-        <p>
-          Unique Cleaning and Maintenance Facilities Limited provides
-          professional cleaning, maintenance, renovation and property
-          services for homes, offices, commercial buildings and other
-          premises across London and surrounding areas.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#contact" class="button button-primary">
-            Contact Us
-          </a>
-
-          <a
-            href="https://wa.me/447438254679"
-            class="button button-secondary"
-            target="_blank"
-          >
-            WhatsApp Us
-          </a>
-        </div>
-      </div>
-
-
-      <div class="hero-box">
-
-        <h3>Our Main Services</h3>
-
-        <ul>
-          <li>✓ Carpet Cleaning</li>
-          <li>✓ General Cleaning</li>
-          <li>✓ Plumbing</li>
-          <li>✓ Central Heating</li>
-          <li>✓ Flooring</li>
-          <li>✓ Renovations</li>
-          <li>✓ Goods Transport</li>
-          <li>✓ Bathroom Fitting</li>
-          <li>✓ Professional Tiling</li>
-          <li>✓ Property Maintenance</li>
-          <li>✓ Facilities Services</li>
-        </ul>
-
-      </div>
+      <img
+        src="logo.webp"
+        alt="Unique Cleaning and Maintenance Facilities Limited"
+      >
 
     </div>
 
-  </section>
+
+  </div>
+
+</section>
 
 
-  <!-- SERVICES -->
-  <section class="section" id="services">
 
-    <div class="section-container">
+<!-- TRUST -->
 
-      <div class="section-heading">
+<div class="trust-strip">
 
-        <h2>Our Services</h2>
+  <div class="trust-inner">
 
-        <p>
-          Professional services for residential, commercial and
-          professional properties across London and surrounding areas.
-        </p>
+    <div class="trust-item">
+      <strong>24/7</strong>
+      <span>Availability</span>
+    </div>
 
+    <div class="trust-item">
+      <strong>London</strong>
+      <span>& Surrounding Areas</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Residential</strong>
+      <span>Homes & Properties</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Commercial</strong>
+      <span>Offices & Businesses</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        What We Do
       </div>
 
+      <h2>
+        Our Professional Services
+      </h2>
 
-      <div class="services-grid">
+      <p>
+
+        A wide range of cleaning, maintenance,
+        renovation and property solutions for
+        residential and commercial customers.
+
+      </p>
+
+    </div>
 
 
-        <div class="service-card">
-          <div class="service-number">1</div>
+
+    <div class="services-grid">
+
+
+      <!-- 1 -->
+
+      <article class="service-card">
+
+        <img
+          src="carpet-cleaning.webp"
+          alt="Professional carpet cleaning service"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">01</div>
 
           <h3>Carpet Cleaning</h3>
 
           <p>
-            Professional carpet cleaning to help keep your carpets
-            fresh, clean and well maintained.
+
+            Professional carpet cleaning for homes,
+            offices and commercial premises to help
+            refresh and maintain your carpets.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">2</div>
+
+
+      <!-- 2 -->
+
+      <article class="service-card">
+
+        <img
+          src="cleaning-services.webp"
+          alt="Professional cleaning services"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">02</div>
 
           <h3>Cleaning Services</h3>
 
           <p>
-            General and professional cleaning services for homes,
-            offices, commercial properties and other premises.
+
+            Cleaning services for residential homes,
+            offices, professional buildings,
+            commercial properties and other premises.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">3</div>
+
+
+      <!-- 3 -->
+
+      <article class="service-card">
+
+        <img
+          src="plumbing.webp"
+          alt="Professional plumbing services"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">03</div>
 
           <h3>Plumbing</h3>
 
           <p>
-            Plumbing services for properties, including general
-            plumbing maintenance and repairs.
+
+            General plumbing services, installations,
+            maintenance and property plumbing support.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">4</div>
+
+
+      <!-- 4 -->
+
+      <article class="service-card">
+
+        <img
+          src="central-heating.webp"
+          alt="Central heating maintenance service"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">04</div>
 
           <h3>Central Heating</h3>
 
           <p>
-            Central heating services and property maintenance support.
+
+            Central heating services and maintenance
+            support to help keep your property
+            comfortable and functioning properly.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">5</div>
+
+
+      <!-- 5 -->
+
+      <article class="service-card">
+
+        <img
+          src="flooring.webp"
+          alt="Professional flooring installation"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">05</div>
 
           <h3>Flooring</h3>
 
           <p>
-            Flooring services for different types of properties,
-            with a strong focus on customers across London.
+
+            Flooring installation and property
+            flooring services for different types
+            of residential and commercial spaces.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">6</div>
+
+
+      <!-- 6 -->
+
+      <article class="service-card">
+
+        <img
+          src="renovations.webp"
+          alt="Property renovation services"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">06</div>
 
           <h3>Renovations</h3>
 
           <p>
-            Property renovation and improvement services to help
-            transform and maintain your space.
+
+            Renovation and property improvement
+            services designed to refresh, improve
+            and transform your space.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">7</div>
+
+
+      <!-- 7 -->
+
+      <article class="service-card">
+
+        <img
+          src="goods-transport.webp"
+          alt="Goods transport and moving service"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">07</div>
 
           <h3>Goods Transport</h3>
 
           <p>
-            Transport of goods and belongings from one building
-            or property to another.
+
+            Transport of goods and belongings
+            between buildings and properties
+            across London and surrounding areas.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">8</div>
+
+
+      <!-- 8 -->
+
+      <article class="service-card">
+
+        <img
+          src="property-maintenance.webp"
+          alt="Property maintenance services"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">08</div>
 
           <h3>Property Maintenance</h3>
 
           <p>
-            General property maintenance services to help keep
-            buildings safe, functional and well maintained.
+
+            General property maintenance to help
+            keep homes and commercial buildings
+            functional and well maintained.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">9</div>
+
+
+      <!-- 9 -->
+
+      <article class="service-card">
+
+        <img
+          src="facilities-services.webp"
+          alt="Professional facilities services"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
+          <div class="service-number">09</div>
 
           <h3>Facilities Services</h3>
 
           <p>
-            Facilities and building support services for a wide
-            range of property needs.
+
+            Practical facilities support for
+            residential, professional and
+            commercial properties.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
+
+
+      <!-- 10 -->
+
+      <article class="service-card">
+
+        <img
+          src="bathroom-fitting.webp"
+          alt="Professional bathroom fitting service"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
           <div class="service-number">10</div>
 
           <h3>All Bathroom Fitting</h3>
 
           <p>
-            Complete bathroom fitting and installation services,
-            helping customers create practical and attractive bathrooms.
+
+            Complete bathroom fitting and
+            installation services to create
+            practical, modern and attractive bathrooms.
+
           </p>
+
         </div>
 
+      </article>
 
-        <div class="service-card">
+
+
+      <!-- 11 -->
+
+      <article class="service-card">
+
+        <img
+          src="professional-tiling.webp"
+          alt="Professional wall and floor tiling"
+          class="service-image"
+          loading="lazy"
+        >
+
+        <div class="service-content">
+
           <div class="service-number">11</div>
 
           <h3>Professional Tiling</h3>
 
           <p>
-            Professional tiling services for bathrooms, kitchens,
-            floors, walls and other areas of your property.
+
+            Professional tiling for bathrooms,
+            kitchens, floors, walls and other
+            areas of your property.
+
           </p>
+
         </div>
 
+      </article>
 
-      </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- WHO WE SERVE -->
-  <section class="section section-light">
 
-    <div class="section-container">
+<!-- ABOUT -->
 
-      <div class="section-heading">
+<section class="section section-light" id="about">
 
-        <h2>Who We Serve</h2>
+  <div class="container">
+
+    <div class="about-grid">
+
+
+      <div class="about-content">
+
+        <div class="eyebrow">
+          About Our Company
+        </div>
+
+        <h2>
+          One Team for a Wide Range of Property Services
+        </h2>
 
         <p>
-          We provide services for many different types of buildings
-          and properties.
+
+          Unique Cleaning and Maintenance Facilities Limited
+          provides cleaning, maintenance, renovation and
+          property-related services across London and
+          surrounding areas.
+
+        </p>
+
+        <p>
+
+          We work with residential customers,
+          offices, commercial premises, rental properties,
+          professional buildings and other types of property.
+
+        </p>
+
+        <p>
+
+          Whether you require cleaning,
+          plumbing, flooring, bathroom fitting,
+          tiling, renovations or general property support,
+          you can contact our team to discuss your requirements.
+
         </p>
 
       </div>
 
 
-      <div class="audience-grid">
+      <div class="about-panel">
 
-        <div class="audience-card">
-          Residential Homes
-        </div>
+        <h3>
+          Why Choose Unique?
+        </h3>
 
-        <div class="audience-card">
-          Offices
-        </div>
+        <ul class="why-list">
 
-        <div class="audience-card">
-          Commercial Buildings
-        </div>
+          <li>
+            ✓ Wide range of property services
+          </li>
 
-        <div class="audience-card">
-          Professional Buildings
-        </div>
+          <li>
+            ✓ Residential and commercial customers
+          </li>
 
-        <div class="audience-card">
-          Rental Properties
-        </div>
+          <li>
+            ✓ London and surrounding areas
+          </li>
 
-        <div class="audience-card">
-          Other Premises
-        </div>
+          <li>
+            ✓ 24/7 availability
+          </li>
 
+          <li>
+            ✓ Direct phone and WhatsApp contact
+          </li>
+
+          <li>
+            ✓ Simple online quote enquiries
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- WHO WE SERVE -->
+
+<section class="section">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Our Customers
+      </div>
+
+      <h2>
+        Who We Serve
+      </h2>
+
+      <p>
+
+        Our services are available for many different
+        types of buildings and properties.
+
+      </p>
+
+    </div>
+
+
+    <div class="audience-grid">
+
+      <div class="audience-card">
+        🏠 Residential Homes
+      </div>
+
+      <div class="audience-card">
+        🏢 Offices
+      </div>
+
+      <div class="audience-card">
+        🏬 Commercial Buildings
+      </div>
+
+      <div class="audience-card">
+        🏛️ Professional Buildings
+      </div>
+
+      <div class="audience-card">
+        🔑 Rental Properties
+      </div>
+
+      <div class="audience-card">
+        🏗️ Other Premises
       </div>
 
     </div>
 
-  </section>
+
+  </div>
+
+</section>
 
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
 
-    <div class="section-container">
+<!-- CTA -->
 
-      <div class="about-grid">
+<section class="cta">
 
-        <div class="about-content">
+  <div class="cta-inner">
 
-          <h2>About Unique Cleaning & Maintenance</h2>
-
-          <p>
-            Unique Cleaning and Maintenance Facilities Limited
-            provides a wide range of professional cleaning,
-            maintenance, renovation and property-related services.
-          </p>
-
-          <p>
-            Our aim is to provide reliable support for customers
-            who need help looking after, improving or maintaining
-            their properties.
-          </p>
-
-          <p>
-            We work across London and surrounding areas and are
-            available 24/7.
-          </p>
-
-        </div>
-
-
-        <div class="about-box">
-
-          <h3>Why Choose Us?</h3>
-
-          <p>
-            One company for cleaning, maintenance, renovation,
-            plumbing, flooring, bathroom fitting, tiling,
-            transport and other property needs.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CALL TO ACTION -->
-  <section class="cta">
-
-    <h2>Need Help With Your Property?</h2>
+    <h2>
+      Need Help With Your Property?
+    </h2>
 
     <p>
-      Contact Unique Cleaning and Maintenance Facilities Limited
-      today. We are available 24/7 across London and surrounding areas.
+
+      Tell us what service you need and
+      contact Unique Cleaning and Maintenance
+      Facilities Limited today.
+
     </p>
 
-    <a href="#contact" class="button button-secondary">
-      Get In Touch
-    </a>
+    <div class="button-row" style="justify-content:center;">
 
-  </section>
+      <a href="#contact" class="btn btn-primary">
+
+        Request a Quote
+
+      </a>
 
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
+      <a
+        href="tel:07438254679"
+        class="btn btn-whatsapp"
+      >
 
-    <div class="section-container">
+        Call 07438 254679
 
-      <div class="section-heading">
+      </a>
 
-        <h2>Contact Us</h2>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="section section-light" id="contact">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Contact Us
+      </div>
+
+      <h2>
+        Request a Quote
+      </h2>
+
+      <p>
+
+        Call, WhatsApp, email us or complete
+        the enquiry form below.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="contact-wrapper">
+
+
+      <!-- CONTACT INFORMATION -->
+
+      <div class="contact-info">
+
+        <h3>
+          Get in Touch
+        </h3>
 
         <p>
-          Get in touch with us about your cleaning, maintenance,
-          renovation or property service requirements.
+
+          Contact our team about the service
+          you require.
+
         </p>
 
+
+        <div class="contact-detail">
+
+          <strong>Phone</strong>
+
+          <a href="tel:+447438254679">
+
+            07438 254679
+
+          </a>
+
+        </div>
+
+
+        <div class="contact-detail">
+
+          <strong>Professional Email</strong>
+
+          <a
+            href="mailto:info@uniquecleaningandmaintenance.co.uk"
+          >
+
+            info@uniquecleaningandmaintenance.co.uk
+
+          </a>
+
+        </div>
+
+
+        <div class="contact-detail">
+
+          <strong>WhatsApp</strong>
+
+          <a
+            href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20and%20Maintenance.%20I%20would%20like%20to%20request%20a%20quote."
+            target="_blank"
+            rel="noopener"
+          >
+
+            Message us on WhatsApp
+
+          </a>
+
+        </div>
+
+
+        <div class="contact-detail">
+
+          <strong>Service Area</strong>
+
+          London and surrounding areas
+
+        </div>
+
+
+        <div class="contact-detail">
+
+          <strong>Availability</strong>
+
+          24 hours a day, 7 days a week
+
+        </div>
+
       </div>
 
 
-      <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+
+      <div class="form-box">
+
+        <h3>
+          Send an Enquiry
+        </h3>
+
+        <p>
+
+          Fill in the form and tell us
+          which service you require.
+
+        </p>
 
 
-        <div class="contact-card">
+        <form
+          action="https://formsubmit.co/info@uniquecleaningandmaintenance.co.uk"
+          method="POST"
+        >
 
-          <h3>Phone</h3>
 
-          <p>
-            <a href="tel:07438254679">
-              07438 254679
-            </a>
+          <!-- FORM SETTINGS -->
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Website Quote Enquiry"
+          >
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          >
+
+          <input
+            type="text"
+            name="_honey"
+            style="display:none"
+          >
+
+
+          <div class="form-grid">
+
+
+            <div class="form-group">
+
+              <label for="name">
+                Full Name *
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Your name"
+                required
+              >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+              <label for="phone">
+                Phone Number *
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="Phone"
+                placeholder="Your phone number"
+                required
+              >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email Address *
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Your email address"
+                required
+              >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+              <label for="service">
+                Service Required *
+              </label>
+
+              <select
+                id="service"
+                name="Service Required"
+                required
+              >
+
+                <option value="">
+                  Select a service
+                </option>
+
+                <option>
+                  Carpet Cleaning
+                </option>
+
+                <option>
+                  Cleaning Services
+                </option>
+
+                <option>
+                  Plumbing
+                </option>
+
+                <option>
+                  Central Heating
+                </option>
+
+                <option>
+                  Flooring
+                </option>
+
+                <option>
+                  Renovations
+                </option>
+
+                <option>
+                  Goods Transport
+                </option>
+
+                <option>
+                  Property Maintenance
+                </option>
+
+                <option>
+                  Facilities Services
+                </option>
+
+                <option>
+                  All Bathroom Fitting
+                </option>
+
+                <option>
+                  Professional Tiling
+                </option>
+
+                <option>
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+              <label for="postcode">
+                Postcode / Area
+              </label>
+
+              <input
+                type="text"
+                id="postcode"
+                name="Postcode or Area"
+                placeholder="For example: E14, London"
+              >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+              <label for="message">
+                Tell Us What You Need *
+              </label>
+
+              <textarea
+                id="message"
+                name="Message"
+                placeholder="Please describe the work or service you require..."
+                required
+              ></textarea>
+
+            </div>
+
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="submit-btn"
+          >
+
+            Send My Enquiry
+
+          </button>
+
+
+          <p class="form-note">
+
+            By submitting this form, you are providing
+            your contact details so we can respond to
+            your enquiry.
+
           </p>
 
-        </div>
 
-
-        <div class="contact-card">
-
-          <h3>WhatsApp</h3>
-
-          <p>
-            <a
-              href="https://wa.me/447438254679"
-              target="_blank"
-            >
-              Message us on WhatsApp
-            </a>
-          </p>
-
-        </div>
-
-
-        <div class="contact-card">
-
-          <h3>Service Area</h3>
-
-          <p>
-            London and surrounding areas
-          </p>
-
-          <p>
-            Available 24/7
-          </p>
-
-        </div>
-
+        </form>
 
       </div>
+
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- FOOTER -->
-  <footer>
 
-    <p>
-      © 2026 Unique Cleaning and Maintenance Facilities Limited.
-      All rights reserved.
-    </p>
+<!-- FOOTER -->
 
-  </footer>
+<footer>
+
+  <div class="footer-grid">
+
+
+    <div class="footer-about">
+
+      <img
+        src="logo.webp"
+        alt="Unique Cleaning and Maintenance Facilities Limited"
+        class="footer-logo"
+      >
+
+      <p>
+
+        Cleaning, property maintenance,
+        renovations, plumbing, heating,
+        flooring, bathroom fitting, tiling
+        and facilities services across
+        London and surrounding areas.
+
+      </p>
+
+    </div>
+
+
+
+    <div>
+
+      <h4>
+        Quick Links
+      </h4>
+
+      <ul>
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#about">About Us</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div>
+
+      <h4>
+        Contact
+      </h4>
+
+      <ul>
+
+        <li>
+          07438 254679
+        </li>
+
+        <li>
+          info@uniquecleaningandmaintenance.co.uk
+        </li>
+
+        <li>
+          London & surrounding areas
+        </li>
+
+        <li>
+          Available 24/7
+        </li>
+
+      </ul>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="copyright">
+
+    © 2026 Unique Cleaning and Maintenance Facilities Limited.
+    All rights reserved.
+
+  </div>
+
+</footer>
+
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a
+  href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20and%20Maintenance.%20I%20would%20like%20to%20request%20a%20quote."
+  target="_blank"
+  rel="noopener"
+  class="floating-whatsapp"
+  aria-label="Contact us on WhatsApp"
+  title="WhatsApp Us"
+>
+
+  ☎
+
+</a>
+
 
 </body>
 </html>

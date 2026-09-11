@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,7 @@
 
   <title>Unique Cleaning Facilities Limited | Cleaning & Property Services London</title>
 
-  <meta name="description"
-        content="Unique Cleaning Facilities Limited provides cleaning, property maintenance, plumbing, flooring, renovations, bathroom fitting, tiling and facilities services across London and surrounding areas.">
+  <meta name="description" content="Unique Cleaning Facilities Limited provides cleaning, property maintenance, plumbing, flooring, renovations, bathroom fitting, tiling and facilities services across London and surrounding areas.">
 
   <link rel="canonical" href="https://uniquecleaningandmaintenance.co.uk/">
 
@@ -48,10 +48,6 @@
       margin: auto;
     }
 
-    /* =========================
-       TOP BAR
-    ========================= */
-
     .topbar {
       background: #075180;
       color: white;
@@ -75,14 +71,6 @@
       flex-wrap: wrap;
     }
 
-    .topbar a:hover {
-      text-decoration: underline;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
       position: sticky;
       top: 0;
@@ -103,7 +91,6 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      flex-shrink: 0;
     }
 
     .brand img {
@@ -118,7 +105,6 @@
       font-size: 24px;
       color: #0a4777;
       line-height: 1;
-      letter-spacing: 0.5px;
     }
 
     .brand-text span {
@@ -128,7 +114,6 @@
       font-weight: 800;
       text-transform: uppercase;
       font-size: 11px;
-      line-height: 1.25;
     }
 
     nav {
@@ -139,35 +124,11 @@
       font-size: 15px;
     }
 
-    nav a {
-      position: relative;
-    }
-
-    nav a:not(.nav-button)::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -7px;
-      width: 0;
-      height: 3px;
-      background: #1687e0;
-      transition: width 0.2s ease;
-    }
-
-    nav a:not(.nav-button):hover::after {
-      width: 100%;
-    }
-
     .nav-button {
       background: #28a542;
       color: white;
       padding: 13px 20px;
       border-radius: 6px;
-      box-shadow: 0 4px 12px rgba(40,165,66,.22);
-    }
-
-    .nav-button:hover {
-      background: #208c36;
     }
 
     .menu-toggle {
@@ -178,10 +139,6 @@
       color: #0a4777;
       cursor: pointer;
     }
-
-    /* =========================
-       HERO
-    ========================= */
 
     .hero {
       min-height: 575px;
@@ -202,6 +159,10 @@
       padding: 68px 0;
     }
 
+    .hero-content {
+      max-width: 760px;
+    }
+
     .location-pill {
       display: inline-block;
       border: 1px solid rgba(255,255,255,.7);
@@ -210,18 +171,12 @@
       margin-bottom: 17px;
       font-size: 14px;
       font-weight: 700;
-      background: rgba(0,0,0,.14);
-    }
-
-    .hero-content {
-      max-width: 760px;
     }
 
     .hero h1 {
       font-size: clamp(42px, 5vw, 65px);
       line-height: 1.02;
       margin-bottom: 18px;
-      letter-spacing: -1.5px;
     }
 
     .hero h1 .green {
@@ -253,20 +208,17 @@
     .tick {
       width: 25px;
       height: 25px;
-      flex: 0 0 25px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
       background: #34b44b;
       border-radius: 50%;
-      font-size: 15px;
     }
 
     .hero-buttons {
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
-      align-items: center;
     }
 
     .button {
@@ -274,15 +226,9 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      gap: 8px;
       padding: 15px 22px;
       border-radius: 6px;
       font-weight: 800;
-      transition: transform .2s ease, background .2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
     }
 
     .button-green {
@@ -290,23 +236,11 @@
       color: white;
     }
 
-    .button-green:hover {
-      background: #208d39;
-    }
-
     .button-white {
       background: white;
       color: #0870c5;
       border: 2px solid #1c84d8;
     }
-
-    .button-white:hover {
-      background: #eff8ff;
-    }
-
-    /* =========================
-       SECTION TITLES
-    ========================= */
 
     .section {
       padding: 78px 0;
@@ -323,31 +257,13 @@
 
     .section-title h2 {
       font-size: 40px;
-      line-height: 1.1;
       color: #0a416e;
       margin-bottom: 10px;
     }
 
-    .section-title h2::after {
-      content: "";
-      display: block;
-      width: 64px;
-      height: 4px;
-      background: #36ad46;
-      border-radius: 5px;
-      margin: 12px auto 0;
-    }
-
     .section-title p {
-      max-width: 760px;
-      margin: 0 auto;
       color: #66798a;
-      font-size: 16px;
     }
-
-    /* =========================
-       POPULAR SERVICES
-    ========================= */
 
     .popular-top {
       display: flex;
@@ -360,11 +276,6 @@
     .popular-top h2 {
       color: #0a416e;
       font-size: 34px;
-    }
-
-    .view-all {
-      color: #0879d5;
-      font-weight: 800;
     }
 
     .popular-grid {
@@ -394,14 +305,12 @@
     .popular-card h3 {
       color: #0a416e;
       font-size: 17px;
-      margin-bottom: 5px;
     }
 
     .popular-card p {
       color: #647789;
       font-size: 13px;
-      min-height: 44px;
-      margin-bottom: 12px;
+      margin: 8px 0 12px;
     }
 
     .small-quote {
@@ -413,15 +322,6 @@
       font-weight: 800;
       font-size: 13px;
     }
-
-    .small-quote:hover {
-      background: #0874cb;
-      color: white;
-    }
-
-    /* =========================
-       TRUST STRIP
-    ========================= */
 
     .trust-strip {
       background: #f8fafc;
@@ -440,26 +340,11 @@
       border-right: 1px solid #dde5eb;
     }
 
-    .trust-item:last-child {
-      border-right: none;
-    }
-
     .trust-icon {
       font-size: 32px;
       color: #0b4b7e;
-      line-height: 1;
       margin-bottom: 7px;
     }
-
-    .trust-item strong {
-      display: block;
-      color: #0b416d;
-      line-height: 1.2;
-    }
-
-    /* =========================
-       HOW IT WORKS
-    ========================= */
 
     .how {
       background: linear-gradient(120deg, #073f6c, #075c91);
@@ -473,15 +358,6 @@
       margin-bottom: 40px;
     }
 
-    .how-title::after {
-      content: "";
-      display: block;
-      width: 55px;
-      height: 4px;
-      background: #55c44f;
-      margin: 11px auto 0;
-    }
-
     .how-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -490,7 +366,6 @@
 
     .how-step {
       text-align: center;
-      position: relative;
     }
 
     .step-circle {
@@ -503,40 +378,7 @@
       align-items: center;
       justify-content: center;
       font-size: 29px;
-      position: relative;
     }
-
-    .step-number {
-      position: absolute;
-      left: -8px;
-      top: 20px;
-      background: #43ba45;
-      color: white;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .how-step h3 {
-      margin-bottom: 4px;
-      font-size: 17px;
-    }
-
-    .how-step p {
-      color: #dbeaf3;
-      font-size: 14px;
-      max-width: 230px;
-      margin: auto;
-    }
-
-    /* =========================
-       ALL SERVICES
-    ========================= */
 
     .all-services-grid {
       display: grid;
@@ -552,18 +394,8 @@
       height: 140px;
       object-fit: cover;
       border-radius: 7px;
-      box-shadow: 0 5px 13px rgba(0,0,0,.08);
       margin-bottom: 9px;
     }
-
-    .service-tile strong {
-      color: #0b416d;
-      font-size: 14px;
-    }
-
-    /* =========================
-       ABOUT
-    ========================= */
 
     .about-grid {
       display: grid;
@@ -575,63 +407,27 @@
     .about-grid h2 {
       color: #0b416d;
       font-size: 40px;
-      line-height: 1.15;
       margin-bottom: 20px;
-    }
-
-    .about-grid p {
-      color: #637689;
-      font-size: 17px;
-      margin-bottom: 16px;
-    }
-
-    .about-image {
-      overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 0 15px 35px rgba(0,0,0,.13);
     }
 
     .about-image img {
       height: 440px;
       object-fit: cover;
+      border-radius: 15px;
     }
 
-    /* =========================
-       CONTACT CTA
-    ========================= */
-
     .contact-cta {
-      background:
-        linear-gradient(rgba(7,77,126,.72), rgba(7,77,126,.75)),
-        url("facilities-services.webp") center/cover no-repeat;
+      background: linear-gradient(rgba(7,77,126,.80), rgba(7,77,126,.80)),
+                  url("facilities-services.webp") center/cover no-repeat;
       color: white;
       padding: 55px 0;
       text-align: center;
     }
 
-    .contact-cta h2 {
-      font-size: 37px;
-      margin-bottom: 7px;
-    }
-
-    .contact-cta p {
-      margin-bottom: 22px;
-      font-size: 17px;
-    }
-
-    .contact-cta .hero-buttons {
-      justify-content: center;
-    }
-
-    /* =========================
-       QUOTE FORM
-    ========================= */
-
     .contact-layout {
       display: grid;
       grid-template-columns: .8fr 1.2fr;
       gap: 35px;
-      align-items: start;
     }
 
     .contact-info {
@@ -641,48 +437,16 @@
       padding: 34px;
     }
 
-    .contact-info h3 {
-      font-size: 29px;
-      margin-bottom: 9px;
-    }
-
-    .contact-info > p {
-      color: #d8e8f3;
-      margin-bottom: 20px;
-    }
-
     .contact-row {
       padding: 15px 0;
       border-bottom: 1px solid rgba(255,255,255,.15);
-    }
-
-    .contact-row:last-child {
-      border-bottom: 0;
-    }
-
-    .contact-row strong {
-      display: block;
-      color: #8ed1ff;
-      margin-bottom: 3px;
     }
 
     .quote-box {
       background: white;
       border-radius: 13px;
       border: 1px solid #dce5ec;
-      box-shadow: 0 10px 28px rgba(0,0,0,.09);
       padding: 34px;
-    }
-
-    .quote-box h3 {
-      font-size: 29px;
-      color: #0b416d;
-      margin-bottom: 5px;
-    }
-
-    .quote-box > p {
-      color: #66798b;
-      margin-bottom: 22px;
     }
 
     .form-grid {
@@ -691,17 +455,12 @@
       gap: 16px;
     }
 
-    .field {
-      margin-bottom: 4px;
-    }
-
     .full-field {
       grid-column: 1 / -1;
     }
 
     label {
       display: block;
-      color: #25455e;
       font-weight: 800;
       font-size: 13px;
       margin-bottom: 6px;
@@ -715,38 +474,11 @@
       border-radius: 5px;
       border: 1px solid #bdccd8;
       font: inherit;
-      background: white;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: none;
-      border-color: #1687e0;
-      box-shadow: 0 0 0 3px rgba(22,135,224,.12);
     }
 
     textarea {
       min-height: 135px;
       resize: vertical;
-    }
-
-    .contact-methods {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      padding-top: 5px;
-    }
-
-    .radio-option {
-      display: inline-flex;
-      gap: 6px;
-      align-items: center;
-      font-weight: normal;
-    }
-
-    .radio-option input {
-      width: auto;
     }
 
     .submit-button {
@@ -761,21 +493,6 @@
       cursor: pointer;
       margin-top: 15px;
     }
-
-    .submit-button:hover {
-      background: #1f8b36;
-    }
-
-    .privacy-note {
-      color: #687b8b;
-      font-size: 12px;
-      margin-top: 12px;
-      text-align: center;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
 
     footer {
       background: #06345a;
@@ -797,11 +514,6 @@
       margin-bottom: 14px;
     }
 
-    footer h4 {
-      margin-bottom: 13px;
-      font-size: 16px;
-    }
-
     footer p,
     footer li,
     footer a {
@@ -811,17 +523,6 @@
 
     footer ul {
       list-style: none;
-    }
-
-    footer li {
-      margin-bottom: 7px;
-    }
-
-    .footer-brand-name {
-      color: white;
-      font-size: 21px;
-      font-weight: bold;
-      margin-bottom: 9px;
     }
 
     .footer-bottom {
@@ -836,16 +537,6 @@
       font-size: 12px;
     }
 
-    .footer-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    /* =========================
-       FLOATING WHATSAPP
-    ========================= */
-
     .floating-whatsapp {
       position: fixed;
       right: 20px;
@@ -858,59 +549,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 30px;
+      font-size: 28px;
       z-index: 990;
-      box-shadow: 0 7px 20px rgba(0,0,0,.25);
     }
-
-    .floating-whatsapp:hover {
-      transform: scale(1.05);
-    }
-
-    /* =========================
-       MOBILE BOTTOM BAR
-    ========================= */
 
     .mobile-contact-bar {
       display: none;
     }
 
-    /* =========================
-       RESPONSIVE
-    ========================= */
-
-    @media (max-width: 1150px) {
-      .brand-text {
-        display: none;
-      }
-
-      nav {
-        gap: 17px;
-      }
-
-      .popular-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .all-services-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
     @media (max-width: 900px) {
-      .topbar-left .email-top,
-      .topbar-left .location-top {
-        display: none;
-      }
-
-      .navbar {
-        min-height: 88px;
-      }
-
-      .brand-text {
-        display: block;
-      }
-
       nav {
         position: absolute;
         top: 88px;
@@ -918,10 +565,7 @@
         right: 0;
         background: white;
         flex-direction: column;
-        align-items: stretch;
-        gap: 0;
         padding: 15px 20px 22px;
-        box-shadow: 0 12px 18px rgba(0,0,0,.10);
         display: none;
       }
 
@@ -929,41 +573,12 @@
         display: flex;
       }
 
-      nav a {
-        padding: 12px 5px;
-      }
-
-      nav a:not(.nav-button)::after {
-        display: none;
-      }
-
-      .nav-button {
-        text-align: center;
-        margin-top: 8px;
-      }
-
       .menu-toggle {
         display: block;
       }
 
-      .hero {
-        min-height: 640px;
-      }
-
-      .hero-content {
-        max-width: 650px;
-      }
-
       .popular-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .trust-item {
-        border-bottom: 1px solid #dde5eb;
       }
 
       .how-grid {
@@ -989,22 +604,6 @@
         padding-bottom: 64px;
       }
 
-      .container {
-        width: min(94%, 560px);
-      }
-
-      .topbar {
-        font-size: 12px;
-      }
-
-      .topbar-inner {
-        justify-content: center;
-      }
-
-      .topbar-right {
-        display: none;
-      }
-
       .brand img {
         width: 78px;
         height: 61px;
@@ -1014,25 +613,8 @@
         font-size: 18px;
       }
 
-      .brand-text span {
-        font-size: 9px;
-      }
-
-      .hero {
-        min-height: 700px;
-        background-position: 62% center;
-      }
-
-      .hero-inner {
-        padding: 54px 0;
-      }
-
       .hero h1 {
         font-size: 40px;
-      }
-
-      .hero-description {
-        font-size: 16px;
       }
 
       .hero-features {
@@ -1048,56 +630,16 @@
         width: 100%;
       }
 
-      .popular-top {
-        display: block;
-        text-align: center;
-      }
-
-      .popular-top h2 {
-        font-size: 29px;
-        margin-bottom: 5px;
-      }
-
       .popular-grid,
       .how-grid,
       .all-services-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .popular-card img {
-        height: 220px;
-      }
-
-      .trust-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .section {
-        padding: 58px 0;
-      }
-
-      .section-title h2,
-      .about-grid h2,
-      .contact-cta h2 {
-        font-size: 31px;
-      }
-
-      .service-tile img {
-        height: 210px;
-      }
-
+      .footer-grid,
       .form-grid {
         grid-template-columns: 1fr;
       }
 
       .full-field {
         grid-column: auto;
-      }
-
-      .quote-box,
-      .contact-info {
-        padding: 25px;
       }
 
       .floating-whatsapp {
@@ -1114,7 +656,6 @@
         height: 64px;
         z-index: 1200;
         background: #22a53f;
-        box-shadow: 0 -3px 16px rgba(0,0,0,.20);
       }
 
       .mobile-contact-bar a {
@@ -1124,15 +665,6 @@
         justify-content: center;
         font-weight: 800;
         font-size: 17px;
-        border-right: 1px solid rgba(255,255,255,.35);
-      }
-
-      .mobile-contact-bar a:last-child {
-        border-right: none;
-      }
-
-      .footer-bottom {
-        padding-bottom: 10px;
       }
     }
   </style>
@@ -1140,91 +672,54 @@
 
 <body>
 
-  <!-- TOP BAR -->
   <div class="topbar">
     <div class="container topbar-inner">
-
       <div class="topbar-left">
         <a href="tel:+447438254679">☎ 07438 254679</a>
-
-        <a class="email-top"
-           href="mailto:info@uniquecleaningandmaintenance.co.uk">
-          ✉ info@uniquecleaningandmaintenance.co.uk
-        </a>
-
-        <span class="location-top">
-          📍 London & Surrounding Areas
-        </span>
+        <a href="mailto:info@uniquecleaningandmaintenance.co.uk">✉ info@uniquecleaningandmaintenance.co.uk</a>
+        <span>📍 London & Surrounding Areas</span>
       </div>
 
       <div class="topbar-right">
         <span>◷ 24/7 Service</span>
-
-        <a href="https://wa.me/447438254679"
-           target="_blank"
-           rel="noopener">
-          WhatsApp Us
-        </a>
+        <a href="https://wa.me/447438254679" target="_blank">WhatsApp Us</a>
       </div>
-
     </div>
   </div>
 
-
-  <!-- HEADER -->
   <header>
-
     <div class="container navbar">
 
       <a href="#home" class="brand">
-
-        <img src="logo.webp"
-             alt="Unique Cleaning Facilities Limited logo">
+        <img src="logo.webp" alt="Unique Cleaning Facilities Limited logo">
 
         <div class="brand-text">
           <strong>UNIQUE</strong>
           <span>Cleaning Facilities Limited</span>
         </div>
-
       </a>
 
-
-      <button
-        class="menu-toggle"
-        aria-label="Open menu"
-        onclick="toggleMenu()">
-        ☰
-      </button>
-
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
       <nav id="mainMenu">
-
         <a href="#home" onclick="closeMenu()">Home</a>
         <a href="#about" onclick="closeMenu()">About Us</a>
         <a href="#services" onclick="closeMenu()">Our Services</a>
         <a href="#why" onclick="closeMenu()">Why Choose Us</a>
         <a href="#contact" onclick="closeMenu()">Contact Us</a>
 
-        <a
-          href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20Facilities%20Limited.%20I%20would%20like%20to%20request%20a%20quote."
-          target="_blank"
-          rel="noopener"
-          class="nav-button">
+        <a class="nav-button"
+           href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20Facilities%20Limited.%20I%20would%20like%20to%20request%20a%20quote."
+           target="_blank">
           WhatsApp Quote
         </a>
-
       </nav>
 
     </div>
-
   </header>
 
-
-  <!-- HERO -->
   <section class="hero" id="home">
-
     <div class="container hero-inner">
-
       <div class="hero-content">
 
         <div class="location-pill">
@@ -1242,446 +737,192 @@
           across London and surrounding areas.
         </p>
 
-
         <div class="hero-features">
-
-          <div class="hero-feature">
-            <span class="tick">✓</span>
-            Professional
-          </div>
-
-          <div class="hero-feature">
-            <span class="tick">✓</span>
-            Convenient
-          </div>
-
-          <div class="hero-feature">
-            <span class="tick">✓</span>
-            Homes & Businesses
-          </div>
-
-          <div class="hero-feature">
-            <span class="tick">✓</span>
-            24/7 Availability
-          </div>
-
+          <div class="hero-feature"><span class="tick">✓</span> Professional</div>
+          <div class="hero-feature"><span class="tick">✓</span> Convenient</div>
+          <div class="hero-feature"><span class="tick">✓</span> Homes & Businesses</div>
+          <div class="hero-feature"><span class="tick">✓</span> 24/7 Availability</div>
         </div>
 
-
         <div class="hero-buttons">
-
-          <a
-            class="button button-green"
-            href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20Facilities%20Limited.%20I%20would%20like%20to%20request%20a%20quote."
-            target="_blank"
-            rel="noopener">
+          <a class="button button-green"
+             href="https://wa.me/447438254679"
+             target="_blank">
             WhatsApp Us
           </a>
 
           <a class="button button-white" href="#contact">
             Request a Quote
           </a>
-
         </div>
 
       </div>
-
     </div>
-
   </section>
 
-
-  <!-- POPULAR SERVICES -->
   <section class="section" id="services">
-
     <div class="container">
 
       <div class="popular-top">
-
         <h2>Our Most Popular Services</h2>
-
-        <a href="#all-services" class="view-all">
-          View All Services →
-        </a>
-
+        <a href="#all-services">View All Services →</a>
       </div>
-
 
       <div class="popular-grid">
 
         <div class="popular-card">
-          <img src="carpet-cleaning.webp"
-               alt="Carpet Cleaning"
-               loading="lazy">
-
+          <img src="carpet-cleaning.webp" alt="Carpet Cleaning">
           <div class="popular-card-content">
             <h3>Carpet Cleaning</h3>
-
-            <p>
-              Carpet cleaning for homes,
-              offices and commercial spaces.
-            </p>
-
-            <a
-              class="small-quote"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/447438254679?text=Hello,%20I%20would%20like%20a%20quote%20for%20Carpet%20Cleaning.">
-              Get a Quote
-            </a>
+            <p>Carpet cleaning for homes, offices and commercial spaces.</p>
+            <a class="small-quote" href="https://wa.me/447438254679?text=I%20would%20like%20a%20quote%20for%20Carpet%20Cleaning." target="_blank">Get a Quote</a>
           </div>
         </div>
 
-
         <div class="popular-card">
-          <img src="cleaning-services.webp"
-               alt="Cleaning Services"
-               loading="lazy">
-
+          <img src="cleaning-services.webp" alt="Cleaning Services">
           <div class="popular-card-content">
             <h3>Cleaning Services</h3>
-
-            <p>
-              Cleaning services for residential
-              and commercial properties.
-            </p>
-
-            <a
-              class="small-quote"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/447438254679?text=Hello,%20I%20would%20like%20a%20quote%20for%20Cleaning%20Services.">
-              Get a Quote
-            </a>
+            <p>Cleaning services for residential and commercial properties.</p>
+            <a class="small-quote" href="https://wa.me/447438254679?text=I%20would%20like%20a%20quote%20for%20Cleaning%20Services." target="_blank">Get a Quote</a>
           </div>
         </div>
 
-
         <div class="popular-card">
-          <img src="bathroom-fitting.webp"
-               alt="Bathroom Fitting"
-               loading="lazy">
-
+          <img src="bathroom-fitting.webp" alt="Bathroom Fitting">
           <div class="popular-card-content">
             <h3>All Bathroom Fitting</h3>
-
-            <p>
-              Bathroom fitting, installation
-              and property improvement work.
-            </p>
-
-            <a
-              class="small-quote"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/447438254679?text=Hello,%20I%20would%20like%20a%20quote%20for%20Bathroom%20Fitting.">
-              Get a Quote
-            </a>
+            <p>Bathroom fitting and property improvement work.</p>
+            <a class="small-quote" href="https://wa.me/447438254679?text=I%20would%20like%20a%20quote%20for%20Bathroom%20Fitting." target="_blank">Get a Quote</a>
           </div>
         </div>
 
-
         <div class="popular-card">
-          <img src="property-maintenance.webp"
-               alt="Property Maintenance"
-               loading="lazy">
-
+          <img src="property-maintenance.webp" alt="Property Maintenance">
           <div class="popular-card-content">
             <h3>Property Maintenance</h3>
-
-            <p>
-              General maintenance for different
-              types of residential and commercial property.
-            </p>
-
-            <a
-              class="small-quote"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/447438254679?text=Hello,%20I%20would%20like%20a%20quote%20for%20Property%20Maintenance.">
-              Get a Quote
-            </a>
+            <p>General maintenance for residential and commercial properties.</p>
+            <a class="small-quote" href="https://wa.me/447438254679?text=I%20would%20like%20a%20quote%20for%20Property%20Maintenance." target="_blank">Get a Quote</a>
           </div>
         </div>
 
-
         <div class="popular-card">
-          <img src="plumbing.webp"
-               alt="Plumbing"
-               loading="lazy">
-
+          <img src="plumbing.webp" alt="Plumbing">
           <div class="popular-card-content">
             <h3>Plumbing</h3>
-
-            <p>
-              General plumbing, installation
-              and maintenance support.
-            </p>
-
-            <a
-              class="small-quote"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/447438254679?text=Hello,%20I%20would%20like%20a%20quote%20for%20Plumbing.">
-              Get a Quote
-            </a>
+            <p>General plumbing, installation and maintenance support.</p>
+            <a class="small-quote" href="https://wa.me/447438254679?text=I%20would%20like%20a%20quote%20for%20Plumbing." target="_blank">Get a Quote</a>
           </div>
         </div>
 
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- TRUST STRIP -->
   <section class="trust-strip" id="why">
-
     <div class="container trust-grid">
 
       <div class="trust-item">
         <div class="trust-icon">◷</div>
-        <strong>24/7<br>Availability</strong>
+        <strong>24/7 Availability</strong>
       </div>
 
       <div class="trust-item">
         <div class="trust-icon">⌂</div>
-        <strong>Residential &<br>Commercial</strong>
+        <strong>Residential & Commercial</strong>
       </div>
 
       <div class="trust-item">
         <div class="trust-icon">●</div>
-        <strong>London &<br>Surrounding Areas</strong>
+        <strong>London & Surrounding Areas</strong>
       </div>
 
       <div class="trust-item">
         <div class="trust-icon">⚙</div>
-        <strong>Wide Range<br>of Services</strong>
+        <strong>Wide Range of Services</strong>
       </div>
 
       <div class="trust-item">
         <div class="trust-icon">★</div>
-        <strong>One Company<br>for Property Needs</strong>
+        <strong>One Company for Property Needs</strong>
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- HOW IT WORKS -->
   <section class="how">
-
     <div class="container">
 
       <h2 class="how-title">How It Works</h2>
 
-
       <div class="how-grid">
 
         <div class="how-step">
-
-          <div class="step-circle">
-            ☎
-            <span class="step-number">1</span>
-          </div>
-
-          <h3>Contact Us</h3>
-
-          <p>
-            Call, WhatsApp, email us or use
-            the website form.
-          </p>
-
+          <div class="step-circle">☎</div>
+          <h3>1. Contact Us</h3>
+          <p>Call, WhatsApp, email us or use the website form.</p>
         </div>
 
-
         <div class="how-step">
-
-          <div class="step-circle">
-            💬
-            <span class="step-number">2</span>
-          </div>
-
-          <h3>Tell Us What You Need</h3>
-
-          <p>
-            Let us know the service,
-            property and location.
-          </p>
-
+          <div class="step-circle">💬</div>
+          <h3>2. Tell Us What You Need</h3>
+          <p>Let us know the service, property and location.</p>
         </div>
 
-
         <div class="how-step">
-
-          <div class="step-circle">
-            ▤
-            <span class="step-number">3</span>
-          </div>
-
-          <h3>Receive a Quote</h3>
-
-          <p>
-            We will discuss your requirements
-            and provide quote information.
-          </p>
-
+          <div class="step-circle">▤</div>
+          <h3>3. Receive a Quote</h3>
+          <p>We discuss your requirements and provide quote information.</p>
         </div>
 
-
         <div class="how-step">
-
-          <div class="step-circle">
-            ◫
-            <span class="step-number">4</span>
-          </div>
-
-          <h3>Arrange the Service</h3>
-
-          <p>
-            Agree a suitable arrangement
-            for the required service.
-          </p>
-
+          <div class="step-circle">◫</div>
+          <h3>4. Arrange the Service</h3>
+          <p>Agree a suitable arrangement for the required service.</p>
         </div>
 
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- ALL SERVICES -->
   <section class="section" id="all-services">
-
     <div class="container">
 
       <div class="section-title">
-
         <h2>All Our Services</h2>
-
-        <p>
-          A wide range of cleaning, maintenance,
-          improvement and property services.
-        </p>
-
+        <p>A wide range of cleaning, maintenance, improvement and property services.</p>
       </div>
-
 
       <div class="all-services-grid">
 
-        <div class="service-tile">
-          <img src="carpet-cleaning.webp"
-               alt="Carpet Cleaning"
-               loading="lazy">
-          <strong>Carpet Cleaning</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="cleaning-services.webp"
-               alt="Cleaning Services"
-               loading="lazy">
-          <strong>Cleaning Services</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="renovations.webp"
-               alt="Renovations"
-               loading="lazy">
-          <strong>Renovations</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="central-heating.webp"
-               alt="Central Heating"
-               loading="lazy">
-          <strong>Central Heating</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="goods-transport.webp"
-               alt="Goods Transport"
-               loading="lazy">
-          <strong>Goods Transport</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="bathroom-fitting.webp"
-               alt="All Bathroom Fitting"
-               loading="lazy">
-          <strong>All Bathroom Fitting</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="professional-tiling.webp"
-               alt="Professional Tiling"
-               loading="lazy">
-          <strong>Professional Tiling</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="plumbing.webp"
-               alt="Plumbing"
-               loading="lazy">
-          <strong>Plumbing</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="flooring.webp"
-               alt="Flooring"
-               loading="lazy">
-          <strong>Flooring</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="property-maintenance.webp"
-               alt="Property Maintenance"
-               loading="lazy">
-          <strong>Property Maintenance</strong>
-        </div>
-
-
-        <div class="service-tile">
-          <img src="facilities-services.webp"
-               alt="Facilities Services"
-               loading="lazy">
-          <strong>Facilities Services</strong>
-        </div>
+        <div class="service-tile"><img src="carpet-cleaning.webp" alt="Carpet Cleaning"><strong>Carpet Cleaning</strong></div>
+        <div class="service-tile"><img src="cleaning-services.webp" alt="Cleaning Services"><strong>Cleaning Services</strong></div>
+        <div class="service-tile"><img src="plumbing.webp" alt="Plumbing"><strong>Plumbing</strong></div>
+        <div class="service-tile"><img src="central-heating.webp" alt="Central Heating"><strong>Central Heating</strong></div>
+        <div class="service-tile"><img src="flooring.webp" alt="Flooring"><strong>Flooring</strong></div>
+        <div class="service-tile"><img src="renovations.webp" alt="Renovations"><strong>Renovations</strong></div>
+        <div class="service-tile"><img src="goods-transport.webp" alt="Goods Transport"><strong>Goods Transport</strong></div>
+        <div class="service-tile"><img src="property-maintenance.webp" alt="Property Maintenance"><strong>Property Maintenance</strong></div>
+        <div class="service-tile"><img src="facilities-services.webp" alt="Facilities Services"><strong>Facilities Services</strong></div>
+        <div class="service-tile"><img src="bathroom-fitting.webp" alt="Bathroom Fitting"><strong>All Bathroom Fitting</strong></div>
+        <div class="service-tile"><img src="professional-tiling.webp" alt="Professional Tiling"><strong>Professional Tiling</strong></div>
 
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- ABOUT -->
   <section class="section light-section" id="about">
-
     <div class="container about-grid">
 
       <div>
-
-        <h2>
-          Cleaning and Property Services in One Place
-        </h2>
+        <h2>Cleaning and Property Services in One Place</h2>
 
         <p>
-          Unique Cleaning Facilities Limited provides
-          a range of cleaning, maintenance and property
-          services across London and surrounding areas.
+          Unique Cleaning Facilities Limited provides a range of cleaning,
+          maintenance and property services across London and surrounding areas.
         </p>
 
         <p>
@@ -1689,99 +930,50 @@
           commercial premises and professional buildings.
         </p>
 
-        <p>
-          Our range includes cleaning, carpet cleaning,
-          property maintenance, flooring, plumbing,
-          bathroom fitting, tiling, renovations,
-          facilities services and more.
-        </p>
-
         <div class="hero-buttons">
-
-          <a class="button button-white"
-             href="#contact">
-            Request a Quote
-          </a>
-
-          <a class="button button-green"
-             href="tel:+447438254679">
-            Call 07438 254679
-          </a>
-
+          <a class="button button-white" href="#contact">Request a Quote</a>
+          <a class="button button-green" href="tel:+447438254679">Call 07438 254679</a>
         </div>
-
       </div>
 
-
       <div class="about-image">
-
-        <img src="property-maintenance.webp"
-             alt="Property maintenance services"
-             loading="lazy">
-
+        <img src="property-maintenance.webp" alt="Property maintenance services">
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- CONTACT CTA -->
   <section class="contact-cta">
-
     <div class="container">
 
       <h2>Get in Touch Today</h2>
 
-      <p>
-        Contact us to discuss the cleaning or
-        property service you require.
-      </p>
-
+      <p>Contact us to discuss the cleaning or property service you require.</p>
 
       <div class="hero-buttons">
+        <a class="button button-green" href="tel:+447438254679">☎ Call 07438 254679</a>
 
         <a class="button button-green"
-           href="tel:+447438254679">
-          ☎ Call 07438 254679
-        </a>
-
-        <a
-          class="button button-green"
-          href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20Facilities%20Limited.%20I%20would%20like%20to%20request%20a%20quote."
-          target="_blank"
-          rel="noopener">
+           href="https://wa.me/447438254679"
+           target="_blank">
           WhatsApp Us
         </a>
 
-        <a class="button button-white"
-           href="#contact">
+        <a class="button button-white" href="#contact">
           Request a Quote
         </a>
-
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- CONTACT FORM -->
   <section class="section light-section" id="contact">
-
     <div class="container">
 
       <div class="section-title">
-
         <h2>Request a Quote</h2>
-
-        <p>
-          Complete the form or contact us directly by
-          phone, email or WhatsApp.
-        </p>
-
+        <p>Complete the form or contact us directly by phone, email or WhatsApp.</p>
       </div>
-
 
       <div class="contact-layout">
 
@@ -1789,161 +981,68 @@
 
           <h3>Contact Details</h3>
 
-          <p>
-            Tell us which service you need and
-            where the property is located.
-          </p>
-
-
           <div class="contact-row">
-
             <strong>Phone</strong>
-
-            <a href="tel:+447438254679">
-              07438 254679
-            </a>
-
+            <a href="tel:+447438254679">07438 254679</a>
           </div>
 
-
           <div class="contact-row">
-
             <strong>Email</strong>
-
             <a href="mailto:info@uniquecleaningandmaintenance.co.uk">
               info@uniquecleaningandmaintenance.co.uk
             </a>
-
           </div>
 
-
           <div class="contact-row">
-
             <strong>WhatsApp</strong>
-
-            <a
-              href="https://wa.me/447438254679"
-              target="_blank"
-              rel="noopener">
+            <a href="https://wa.me/447438254679" target="_blank">
               Send a WhatsApp message
             </a>
-
           </div>
 
-
           <div class="contact-row">
-
             <strong>Service Area</strong>
-
             London and surrounding areas
-
           </div>
 
-
           <div class="contact-row">
-
             <strong>Availability</strong>
-
             24 hours a day, 7 days a week
-
           </div>
 
         </div>
-
 
         <div class="quote-box">
 
           <h3>Request a Quote</h3>
 
-          <p>
-            Fill in the form below and tell us
-            what service you are interested in.
-          </p>
+          <form action="https://formsubmit.co/info@uniquecleaningandmaintenance.co.uk"
+                method="POST">
 
-
-          <form
-            action="https://formsubmit.co/info@uniquecleaningandmaintenance.co.uk"
-            method="POST">
-
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Website Quote Enquiry">
-
-            <input
-              type="hidden"
-              name="_template"
-              value="table">
-
-            <input
-              type="text"
-              name="_honey"
-              style="display:none">
-
+            <input type="hidden" name="_subject" value="New Website Quote Enquiry">
+            <input type="hidden" name="_template" value="table">
 
             <div class="form-grid">
 
-
-              <div class="field">
-
-                <label for="name">
-                  Full Name *
-                </label>
-
-                <input
-                  id="name"
-                  name="Name"
-                  type="text"
-                  required>
-
+              <div>
+                <label>Full Name *</label>
+                <input name="Name" type="text" required>
               </div>
 
-
-              <div class="field">
-
-                <label for="phone">
-                  Phone Number *
-                </label>
-
-                <input
-                  id="phone"
-                  name="Phone"
-                  type="tel"
-                  required>
-
+              <div>
+                <label>Phone Number *</label>
+                <input name="Phone" type="tel" required>
               </div>
 
-
-              <div class="field">
-
-                <label for="email">
-                  Email Address *
-                </label>
-
-                <input
-                  id="email"
-                  name="Email"
-                  type="email"
-                  required>
-
+              <div>
+                <label>Email Address *</label>
+                <input name="Email" type="email" required>
               </div>
 
-
-              <div class="field">
-
-                <label for="service">
-                  Service Required *
-                </label>
-
-                <select
-                  id="service"
-                  name="Service Required"
-                  required>
-
-                  <option value="">
-                    Select a service
-                  </option>
-
+              <div>
+                <label>Service Required *</label>
+                <select name="Service Required" required>
+                  <option value="">Select a service</option>
                   <option>Carpet Cleaning</option>
                   <option>Cleaning Services</option>
                   <option>Plumbing</option>
@@ -1956,26 +1055,13 @@
                   <option>All Bathroom Fitting</option>
                   <option>Professional Tiling</option>
                   <option>Other</option>
-
                 </select>
-
               </div>
 
-
-              <div class="field">
-
-                <label for="property">
-                  Property Type
-                </label>
-
-                <select
-                  id="property"
-                  name="Property Type">
-
-                  <option value="">
-                    Select property type
-                  </option>
-
+              <div>
+                <label>Property Type</label>
+                <select name="Property Type">
+                  <option value="">Select property type</option>
                   <option>House</option>
                   <option>Flat / Apartment</option>
                   <option>Office</option>
@@ -1983,104 +1069,29 @@
                   <option>Rental Property</option>
                   <option>Professional Building</option>
                   <option>Other</option>
-
                 </select>
-
               </div>
 
-
-              <div class="field">
-
-                <label for="date">
-                  Preferred Date
-                </label>
-
-                <input
-                  type="date"
-                  id="date"
-                  name="Preferred Date">
-
+              <div>
+                <label>Preferred Date</label>
+                <input type="date" name="Preferred Date">
               </div>
 
-
-              <div class="field full-field">
-
-                <label>
-                  Preferred Contact Method
-                </label>
-
-                <div class="contact-methods">
-
-                  <label class="radio-option">
-                    <input
-                      type="radio"
-                      name="Preferred Contact Method"
-                      value="Phone">
-                    Phone
-                  </label>
-
-                  <label class="radio-option">
-                    <input
-                      type="radio"
-                      name="Preferred Contact Method"
-                      value="Email">
-                    Email
-                  </label>
-
-                  <label class="radio-option">
-                    <input
-                      type="radio"
-                      name="Preferred Contact Method"
-                      value="WhatsApp">
-                    WhatsApp
-                  </label>
-
-                </div>
-
+              <div class="full-field">
+                <label>Postcode / Area</label>
+                <input name="Postcode / Area" type="text">
               </div>
 
-
-              <div class="field full-field">
-
-                <label for="postcode">
-                  Postcode / Area
-                </label>
-
-                <input
-                  id="postcode"
-                  name="Postcode / Area"
-                  type="text">
-
-              </div>
-
-
-              <div class="field full-field">
-
-                <label for="message">
-                  Tell Us More *
-                </label>
-
-                <textarea
-                  id="message"
-                  name="Message"
-                  required></textarea>
-
+              <div class="full-field">
+                <label>Tell Us More *</label>
+                <textarea name="Message" required></textarea>
               </div>
 
             </div>
 
-
-            <button
-              class="submit-button"
-              type="submit">
+            <button class="submit-button" type="submit">
               Send Enquiry
             </button>
-
-
-            <div class="privacy-note">
-              Your information will be used to respond
-              to your enquiry.
-            </div>
 
           </form>
 
@@ -2089,41 +1100,21 @@
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- FOOTER -->
   <footer>
-
     <div class="container">
 
       <div class="footer-grid">
 
-
         <div>
-
-          <img
-            src="logo.webp"
-            alt="Unique Cleaning Facilities Limited"
-            class="footer-logo">
-
-          <div class="footer-brand-name">
-            Unique Cleaning Facilities Limited
-          </div>
-
-          <p>
-            Cleaning, maintenance and property services
-            across London and surrounding areas.
-          </p>
-
+          <img src="logo.webp" alt="Unique Cleaning Facilities Limited" class="footer-logo">
+          <h3>Unique Cleaning Facilities Limited</h3>
+          <p>Cleaning, maintenance and property services across London and surrounding areas.</p>
         </div>
 
-
         <div>
-
           <h4>Quick Links</h4>
-
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -2131,111 +1122,47 @@
             <li><a href="#why">Why Choose Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-
         </div>
 
-
         <div>
-
           <h4>Contact</h4>
-
           <ul>
-            <li>
-              <a href="tel:+447438254679">
-                ☎ 07438 254679
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:info@uniquecleaningandmaintenance.co.uk">
-                ✉ info@uniquecleaningandmaintenance.co.uk
-              </a>
-            </li>
-
+            <li><a href="tel:+447438254679">☎ 07438 254679</a></li>
+            <li><a href="mailto:info@uniquecleaningandmaintenance.co.uk">✉ info@uniquecleaningandmaintenance.co.uk</a></li>
             <li>📍 London & Surrounding Areas</li>
             <li>◷ 24/7 Availability</li>
           </ul>
-
         </div>
 
-
         <div>
-
           <h4>Get in Touch</h4>
-
-          <p>
-            Contact us by phone, email or WhatsApp
-            for enquiries and quote requests.
-          </p>
-
-          <br>
-
-          <a
-            class="button button-green"
-            style="min-width:0; padding:10px 15px;"
-            href="https://wa.me/447438254679"
-            target="_blank"
-            rel="noopener">
+          <a class="button button-green"
+             href="https://wa.me/447438254679"
+             target="_blank">
             WhatsApp
           </a>
-
         </div>
 
       </div>
 
-
       <div class="footer-bottom">
-
-        <div>
-          © 2026 Unique Cleaning Facilities Limited.
-          All rights reserved.
-        </div>
-
-
-        <div class="footer-links">
-          <span>Privacy Policy</span>
-          <span>Terms & Conditions</span>
-        </div>
-
-
-        <div>
-          Some service imagery on this website is illustrative.
-        </div>
-
+        <div>© 2026 Unique Cleaning Facilities Limited. All rights reserved.</div>
+        <div>Some service imagery on this website is illustrative.</div>
       </div>
 
     </div>
-
   </footer>
 
-
-  <!-- FLOATING WHATSAPP -->
-  <a
-    class="floating-whatsapp"
-    href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20Facilities%20Limited.%20I%20would%20like%20to%20request%20a%20quote."
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat with us on WhatsApp">
+  <a class="floating-whatsapp"
+     href="https://wa.me/447438254679"
+     target="_blank">
     ☎
   </a>
 
-
-  <!-- MOBILE CONTACT BAR -->
   <div class="mobile-contact-bar">
-
-    <a href="tel:+447438254679">
-      ☎ Call
-    </a>
-
-    <a
-      href="https://wa.me/447438254679?text=Hello%20Unique%20Cleaning%20Facilities%20Limited.%20I%20would%20like%20to%20request%20a%20quote."
-      target="_blank"
-      rel="noopener">
-      WhatsApp
-    </a>
-
+    <a href="tel:+447438254679">☎ Call</a>
+    <a href="https://wa.me/447438254679" target="_blank">WhatsApp</a>
   </div>
-
 
   <script>
     function toggleMenu() {
@@ -2249,3 +1176,4 @@
 
 </body>
 </html>
+```

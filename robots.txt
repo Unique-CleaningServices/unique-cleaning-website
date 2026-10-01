@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uniquecleaningandmaintenance.co.uk/sitemap.xml

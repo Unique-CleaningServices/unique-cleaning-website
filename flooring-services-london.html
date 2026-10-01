@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flooring Services London | Unique Cleaning Facilities Limited</title>
+
+  <meta name="description"
+        content="Professional flooring services across London for homes and properties. Contact Unique Cleaning Facilities Limited for flooring installation, replacement and renovation enquiries.">
+
+  <link rel="canonical"
+        href="https://uniquecleaningandmaintenance.co.uk/flooring-services-london.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17243a;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #071b33;
+      color: white;
+      padding: 18px 7%;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #071b33, #0c4774);
+      color: white;
+      padding: 90px 7%;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 760px;
+      margin: 0 auto 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #071b33;
+    }
+
+    .btn-whatsapp {
+      background: #20a464;
+      color: white;
+    }
+
+    section {
+      padding: 70px 7%;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 34px;
+      color: #071b33;
+      margin-bottom: 18px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      color: #536174;
+      margin-bottom: 15px;
+    }
+
+    .services {
+      background: #f4f7fa;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #ffffff 0%, #e7f3ff 100%);
+      padding: 34px 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(12, 71, 116, 0.15);
+      box-shadow: 0 10px 30px rgba(7, 27, 51, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: rgba(12, 71, 116, 0.08);
+      top: -45px;
+      right: -35px;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 28px;
+      width: 5px;
+      height: 58px;
+      border-radius: 0 6px 6px 0;
+      background: #0c4774;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(7, 27, 51, 0.20);
+    }
+
+    .service-icon {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0c4774;
+      color: #ffffff;
+      border-radius: 50%;
+      font-size: 22px;
+      font-weight: bold;
+      box-shadow: 0 6px 16px rgba(7, 27, 51, 0.18);
+      z-index: 2;
+    }
+
+    .card h3 {
+      color: #0c4774;
+      margin-bottom: 14px;
+      font-size: 21px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      padding-right: 58px;
+    }
+
+    .card p {
+      color: #59677a;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why ul {
+      margin-top: 20px;
+      padding-left: 22px;
+      color: #536174;
+      font-size: 17px;
+    }
+
+    .why li {
+      margin-bottom: 10px;
+    }
+
+    .areas {
+      background: #f4f7fa;
+    }
+
+    .areas p {
+      color: #536174;
+      font-size: 18px;
+    }
+
+    .cta {
+      background: #071b33;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #041326;
+      color: #dbe4ee;
+      text-align: center;
+      padding: 30px 7%;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="brand">Unique Cleaning Facilities Limited</div>
+    <a href="/">Home</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <h1>Professional Flooring Services in London</h1>
+
+      <p>
+        Flooring installation, replacement and improvement services for
+        homes and properties across London.
+      </p>
+
+      <div class="buttons">
+
+        <a class="btn btn-primary" href="/#contact">
+          Request a Quote
+        </a>
+
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/447438254679?text=I%20would%20like%20a%20quote%20for%20Flooring%20Services."
+           target="_blank"
+           rel="noopener">
+          WhatsApp Us
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="container">
+
+      <h2>Flooring Services for Your Property</h2>
+
+      <p>
+        Unique Cleaning Facilities Limited provides flooring services for
+        residential and commercial properties across London.
+      </p>
+
+      <p>
+        Whether you need new flooring as part of a property improvement,
+        refurbishment or renovation project, contact us to discuss your
+        requirements and request a quote.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+
+      <h2>Our Flooring Services</h2>
+
+      <div class="service-grid">
+
+        <div class="card">
+          <div class="service-icon">▤</div>
+          <h3>Floor Installation</h3>
+          <p>
+            Flooring installation for suitable residential and commercial
+            property requirements.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="service-icon">◆</div>
+          <h3>Laminate Flooring</h3>
+          <p>
+            Laminate flooring installation for suitable rooms and property
+            improvement projects.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="service-icon">▦</div>
+          <h3>Floor Tiling</h3>
+          <p>
+            Professional floor tiling for suitable residential and
+            commercial spaces.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="service-icon">◇</div>
+          <h3>Floor Replacement</h3>
+          <p>
+            Replacement of suitable existing flooring as part of property
+            improvement and renovation work.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="service-icon">✦</div>
+          <h3>Renovation Flooring</h3>
+          <p>
+            Flooring work for refurbishment, renovation and wider property
+            improvement projects.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="service-icon">⌂</div>
+          <h3>Residential & Commercial Flooring</h3>
+          <p>
+            Flooring enquiries are welcome from homeowners, landlords,
+            businesses and commercial property customers.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+
+      <h2>Why Choose Unique Cleaning Facilities Limited?</h2>
+
+      <ul>
+        <li>Flooring services for homes and commercial properties</li>
+        <li>Floor installation, replacement and tiling enquiries welcome</li>
+        <li>Flooring available as part of renovation projects</li>
+        <li>Serving customers across London</li>
+        <li>Residential and commercial enquiries welcome</li>
+        <li>Direct quotation requests through WhatsApp or our website</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="areas">
+    <div class="container">
+
+      <h2>Flooring Services Across London</h2>
+
+      <p>
+        We provide flooring services across London and surrounding areas.
+        Contact us with details of your property, flooring requirements and
+        location to discuss availability and request a quote.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+
+      <h2>Planning New Flooring?</h2>
+
+      <p>
+        Tell us about your property and the flooring work you require.
+        Contact Unique Cleaning Facilities Limited to discuss your project
+        and request a quote.
+      </p>
+
+      <div class="buttons">
+
+        <a class="btn btn-primary" href="/#contact">
+          Request a Quote
+        </a>
+
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/447438254679?text=I%20would%20like%20a%20quote%20for%20Flooring%20Services."
+           target="_blank"
+           rel="noopener">
+          Message on WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    © Unique Cleaning Facilities Limited
+    &nbsp; | &nbsp;
+    <a href="tel:+447438254679">07438 254679</a>
+  </p>
+</footer>
+
+</body>
+</html>
